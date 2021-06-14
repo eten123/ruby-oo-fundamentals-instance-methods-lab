@@ -17,13 +17,18 @@ class Dog
     def name=(dog_name)
         #this method takes in argument of dogs name and sets that argument
         #equal to  the variable this_dogs_name
-        this_dogs_name = dog_name
+        @this_dogs_name = dog_name
     end
-        
+
 
     def name
-        this_dogs_name = dog_name
+       @this_dogs_name
     end
+
+lassie = Dog.new
+lassie.name = "Lassie"
+#we just created the object lassie in the dog class and passed in name lassie
+#to its name
 end
 
 
